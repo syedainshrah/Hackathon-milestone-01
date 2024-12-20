@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(250, 245, 245);
+    margin: 0;
+    padding: 150px;
+}
+
+/* Media Queries for Body Padding */
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+}
+
+.resume-container {
+    display: flex;
+    background-color: #dceaea;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Resume Container */
+@media screen and (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 95%;
+    }
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #253240;
+    color: #dceaea;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #e63946;
+}
+
+/* Media Query for Left Section */
+@media screen and (max-width: 768px) {
+    .left-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: 5px solid #e63946;
+    }
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #e63946;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Query for Profile Picture */
+@media screen and (max-width: 480px) {
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+        border-width: 3px;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: rgb(25, 23, 23);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #e63946;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Media Query for Headings */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 1.5%;
+    }
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    color: #253240;
+}
+
+/* Media Query for Right Section */
+@media screen and (max-width: 768px) {
+    .right-section {
+        width: 100%;
+    }
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+}
+
+/* Media Query for Button */
+@media screen and (max-width: 480px) {
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Left Section Headings */
+.left-section h3 {
+    color: white;
+}
+
+/* Right Section Headings */
+.right-section h3 {
+    color: black;
+}
+
+/* Optional: If you want to change the main heading (h1) on the right side */
+.right-section h1 {
+    color: black;
+}
+
+/* Additional Mobile Optimizations */
+@media screen and (max-width: 480px) {
+    .left-section, .right-section {
+        padding: 15px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    ul li {
+        margin: 3px 0;
+        font-size: 14px;
+    }
+}
